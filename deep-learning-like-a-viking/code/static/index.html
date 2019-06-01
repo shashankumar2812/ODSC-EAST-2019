@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Deep Learning like a Viking</title>
+    <link rel="stylesheet" href="/css/site.css">
+  </head>
+  <body>
+
+    <header>
+      <h1>Deep Learning like a Viking</h1>
+    </header>
+
+    <main>
+
+      <p>Enter the rune on the right and click save to add a rune to the
+        dataset.</p>
+
+      <div id="runeToDraw" class="rune"></div>
+
+      <div class="canvasBorder">
+        <canvas id="drawingCanvas" width="240" height="240" />
+      </div>
+
+      <div id="detectedRune" class="rune"></div>
+
+      <p>Select a rune from the bottom, draw it, and click detect to see if it
+        can be detected.</p>
+
+    </main>
+
+    <section class="buttons">
+      <button id="save">Save</button>
+      <button id="clear">Clear</button>
+      <button id="detect">Detect</button>
+    </section>
+
+    <footer>
+      <table>
+        <tr>
+          <th>ᚠ</th><td>fe</td>
+          <th>ᚢ</th><td>ur</td>
+          <th>ᚦ</th><td>thurs</td>
+          <th>ᚬ</th><td>as</td>
+          <th>ᚱ</th><td>reith</td>
+          <th>ᚴ</th><td>kaun</td>
+          <th>ᚼ</th><td>hagall</td>
+          <th>ᚾ</th><td>nauthr</td>
+        </tr>
+        <tr>
+          <th>ᛁ</th><td>isa</td>
+          <th>ᛅ</th><td>ar</td>
+          <th>ᛋ</th><td>sol</td>
+          <th>ᛏ</th><td>tyr</td>
+          <th>ᛒ</th><td>bjork</td>
+          <th>ᛘ</th><td>mathr</td>
+          <th>ᛚ</th><td>logr</td>
+          <th>ᛦ</th><td>yr</td>
+        </tr>
+      </table>
+    </footer>
+
+    <canvas id="scalingCanvas" width="24" height="24" />
+
+    <script src="/js/app.js"></script>
+    <script src="/js/model.js"></script>
+    <script src="/js/view/button.js"></script>
+    <script src="/js/view/rune-displayer.js"></script>
+    <script src="/js/view/runic-canvas.js"></script>
+    <script src="/js/view/drawing-canvas.js"></script>
+    <script src="/js/view/scaled-canvas.js"></script>
+    <script src="/js/view-controller.js"></script>
+    <script src="/js/adapter.js"></script>
+    <script>
+      const app = new App()
+    </script>
+
+  </body>
+</html>

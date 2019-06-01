@@ -1,0 +1,7 @@
+.vscode
+venv/
+__pycache__/
+futhark_model.json
+futhark_model.h5
+*_model.json
+*.h5
